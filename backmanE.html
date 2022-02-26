@@ -1,0 +1,274 @@
+<html>
+<body>
+    <h1>Backman</h1>
+
+    <button class='languagecollapsible'>Language</button>
+
+    <div class='languagecontent'>
+        
+        <div>
+            <a href='backmanE.html'><img src='english_flag.png' id='languageimage'></a>
+            <a href='backmanE.html' id='languagelink'>English</a>
+        </div>
+
+        <div>
+            <a href='backman.html'><img src='norwegian_flag.png' id='languageimage'></a>
+            <a href='backman.html' id='languagelink'>Norwegian</a>
+        </div>
+           
+    </div>
+
+    <p>My name is Backman. I'm a hero who protects the city from crime at night.</p>
+    <p>But I'm not a classic hero. I'm more of an antihero who believes that the only way to stop crime is to kill the worst criminals, like murderers, and create fear in the crime society to stopp others from comitting crimes.</p>
+    <p>In this website I will tell about how I became a hero, what my powers are and mabye a little more.</p>
+
+    <h2>Backstory</h2>
+    <p>I was a completely normal person in Boston, USA living a normal life with a normal and quite boring job, until one day I saw a difficult man torment a lady.</p>
+    <p>i didn't think to mutch of it until i heard a scream comming form behind me.</p>
+    <p>The scream had come from where the lady and the man had been a few seconds ago.</p>
+    <p>I also ran away that the man was trying to rob the lady and when I tried to help her he lifted me up and threw me down on his knee so that I broke my back.</p>
+    <img src="brukket rygg.jpg" style="width:100px; height: 200px;">
+    <p>When I woke up in the hospital, the doctor told me that I had only just survived and that the man had attacked the lady after me and had ended up killing her when she tried to escape.</p>
+    <p>After that I started training and now I fight criminals as a backman and I break my back to all the worst criminals.</p>
+    <img src="backman.jpg" class="thumbnail">
+    <h2>Powers</h2>
+
+        <p>Now that you know what my back story is, it's time for you to know what my powers are.</p>
+  
+
+            <div class="wrap-collabsible">
+                <input id="collapsible" class="toggle" type="checkbox">
+                <label for="collapsible" class="lbl-toggle">krefter</label>
+                <div class="collapsible-content">
+                  <div class="content-inner">
+                    <ol>
+                        <li>I know where all the weak points in your back are.</li>
+                        <li>I'm stronger than a normal pearson.</li>
+                        <li>I have very stylish underwear.</li>   
+                  </div>
+                </div>
+              </div>
+
+    <h2>Identity</h2>
+    <p>Egentlig så er jeg en forfatter jeg har skrevet en del bøker.</p>
+    <p>My real name is <div id="blur">Fredrick Backman.</div></p>
+    <p>If you are wondering about my books then there is a link to them <a href="https://www.youtube.com/watch?v=EFWz0FDY4YY">here</a>.</p>
+    <p>It's these books that help me fight crime.</p>
+    <p>If you are wondering how then just try to live a double life one for a week and you will see how awkward and hard it can become.</p>
+    <p>I use the books to make living a double life easier.</p>
+
+
+
+<style>
+h1 {color: black;
+    text-align:center;
+    text-decoration: uppercase ;
+    }
+h2 {color: black;
+   text-align:center;
+   text-decoration: uppercase ;
+   }
+
+#blur {
+    font-size: 20px;
+    color: transparent;
+    text-shadow: 0 0 8px #000;
+      }
+p {color: white;
+}
+body {background-color: grey;}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #A77B0E;
+  background: #FAE042;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #7C5A0B;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+/*the links in the language menu*/
+#languagelink {
+    background-color:whitesmoke;
+    color:midnightblue;
+      
+    font-size:18px;
+    margin-left:16px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:16px;
+    padding-bottom:16px;
+    font-weight:normal;
+}
+
+/*gives the links in the language menu an underline at hover*/
+#languagelink:hover {
+    text-decoration:underline;
+}
+
+/*makes the images of flags in the language menu match the links*/
+#languageimage {
+    margin-top:-35px;
+    width:24px;
+    height:14px;
+    display:inline-block;
+      
+}
+
+/*gives the flags a funny shadow at hover*/
+#languageimage:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+/*the button you can click for the language collapsible*/
+.languagecollapsible {
+    background-color:rgb(51, 92, 226);
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 256px;
+    height:50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  
+    float:right;
+    margin-right:50px;
+    top:76px;
+}
+
+/*the plus to the right in the language collapsible*/
+.languagecollapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/*the minus to the right in the language collapsible*/
+.languageactive:after {
+    content: "\2212";
+}
+
+/*oh wow gives the language menu a darker colour at hover*/
+.languagecollapsible:hover {
+    background-color:rgb(30, 45, 182);
+}
+    
+
+/*the grey stuff in the language menu*/
+.languagecontent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: whitesmoke;
+      
+    width:220px;
+    margin-top:50px;
+  
+    float:right;
+    margin-right:-256px;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;  
+}
+
+</style>
+
+<script>
+    var coll = document.getElementsByClassName('languagecollapsible');
+    var i;
+        
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function() {
+        this.classList.toggle('languageactive');
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        } 
+        });
+    }
+</script>
+
+</body>
+</html>
